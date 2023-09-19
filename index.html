@@ -4,53 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account!</title>
+    <title>Sign Up</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
-    <main>
-        <div class="branding">
-            <div class="img-branding">
-                <img src="../img/waves.jpg">
+<body>
+
+    <div class="container">
+        <div class="container-left">
+
+            <h1>Left</h1>
+
+            <div class="logo">
+                <img src="img/waves-light.svg" alt="waves logo" height="200px">
             </div>
+
         </div>
 
-        <div class="heading">
-            <h1>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</h1>
-            <h1>You <em>know</em> you want to.</h1>
-        </div>
 
-        <div class="form-container">
-            <h1 class="form-title">Let's do this!</h1>
-            
-            <form action="https://www.httpbin.org/post" method="post">
-                <label for="first-name">first name</label>
-                <input type="text" name="first-name" id="first-name" required>
+        <div class="container right">
+
+            <div class="container-disclaimer">
                 
-                <label for="last-name">last name</label>
-                <input type="text" name="last-name" id="last-name" required>
-                
-                <label for="email">email</label>
-                <input type="email" name="email" id="email" required>
+                <div class="container-disclaimer-main">
+                    <h1>This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. <br> Sign up <em>now</em> to get started.</h1>
+                </div>
 
-                <label for="phone-num">phone number</label>
-                <input type="number" name="user-phone" id="phone-num" required>
+                <div class="container-disclaimer-less">
+                    <h1>You <em>know</em> you want to.</h1>
+                </div>
 
-                <label for="password">password</label>
-                <input type="password" name="user_password" id="user_password" 
-                required minlength="8">
+                <div class="container-form">
+                    <form action="https://www.httpbin.org/post" method="post">
+                        
+                        <ul>
+                        <li>
+                            <label for="first-name">first name</label>
+                            <input type="text" name="first-name" id="first-name" required>
 
-                <label for="password">confirm password</label>
-                <input type="password" name="confrim_user_password" id="confirm_user_password" 
-                required minlength="8">
+                            <label for="last-name">last name</label>
+                            <input type="text" name="last-name" id="last-name" required>
+                        </li>
+                        <li>
+                            <label for="email">email</label>
+                            <input type="email" name="email" id="email" required>
+                        
+                            <label for="phone-num">phone number</label>
+                            <input type="number" name="user-phone" id="phone-num" required>
+                        </li>
+                        <li>
+                            <label for="password">password</label>
+                            <input type="password" name="user_password" id="user_password" 
+                            required minlength="8">
+
+                            <label for="password">confirm password</label>
+                            <input type="password" name="confrim_user_password" id="confirm_user_password" 
+                            required minlength="8">
+                        </li>
+                        </ul>
+                        <button type="submit">Create Account</button>
+                        <p>Already have an account? <a href="#">Log in</a></p>
+                    </form>
+                </div>
+            </div>       
         </div>
-
-            <button type="submit">create account</button>
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </form>
-    </main>
-
-    <footer>
-    </footer>
+    </div>    
 </body>
 </html>
